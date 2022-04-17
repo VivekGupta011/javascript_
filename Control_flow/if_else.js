@@ -15,7 +15,7 @@ const number=7;
 if(number>0){
     console.log("the nuber is positive");
 }
-// if number is neither greater than 0,nor zero
+// if number   is neither greater than 0,nor zero
 else{
     console.log("The number is negative");
 
