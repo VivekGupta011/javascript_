@@ -1,6 +1,6 @@
 // to find the sum of positive numbers
 // if the user enters negative number, the loop terminates
-// negative number is not added to sum
+// negative number is not added to  sum
 
 const prompt=require('prompt-sync')();
 let sum=0;
