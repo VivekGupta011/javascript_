@@ -5,6 +5,6 @@ function add(a,b){
     console.log(a+b);
     console.log(a*b);
 }
-//calling functions
+//calling functions  
 add(5,6);
 add(2,9);
