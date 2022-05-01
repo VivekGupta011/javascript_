@@ -18,3 +18,14 @@ console.log(a);
 // it is allowed 
 // a=10;
 
+
+
+function x(){
+    var a=9;
+    function y(){
+        console.log(a);
+    }
+    return y;
+}
+var z=x();
+console.log(z);
