@@ -24,7 +24,9 @@ let person={
     //adding symbol as a key
     [id]:123
 };
-console.log(person);
+for (let i in person){
+    console.log(`${i}=>${person[i]}`);
+}
 
 
 
