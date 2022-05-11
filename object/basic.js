@@ -4,3 +4,6 @@ const laptop={
 }
 console.log(laptop);
 console.log(laptop.color);
+
+
+setTimeout()
