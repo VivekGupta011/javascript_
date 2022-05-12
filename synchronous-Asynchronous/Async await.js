@@ -1,7 +1,7 @@
 function register(){
     return new Promise((resolve,reject)=>{
         setTimeout(function(){
-            return resolve("Error while registering!");
+            resolve("Success");
             console.log("this is register section");
             console.log("This is callback");
         },2000);
@@ -15,9 +15,10 @@ function sendEmail(){
 
         setTimeout(function(){
             
-            return reject("Error:while sending email!");
+        
             console.log("this is sendEmail section");
             console.log("this is callback2");
+            resolve();
 
             
         },3000)
@@ -92,19 +93,26 @@ function displayUserData(){
 // Async-await=>this function provide us as a default 'promise()'
 // NOTE:WE Only use "then" when our code are "promise"
 async function authenticate(){
-    await register();
-    await sendEmail();
-    await login();
-    await getUserData();
-    await displayUserData();
+   try{
+    const message= await register();
+                   await sendEmail();
+                   await login();
+                   await getUserData();
+                   await displayUserData();
+                   console.log(message);
+   }catch(err){
+       console.log(err);
+       throw new Error();
+       
+   }
 }
 authenticate().then(function(){
     console.log("Successfully Done");
 
-})
-//1 method.using reject we can handle an errro
-.catch((err)=>{
-    console.log(err)
 });
+//1 method.using reject we can handle an errro
+// .catch((err)=>{
+//     console.log(err)
+// });
 
 console.log("all other function working properly!"); 
