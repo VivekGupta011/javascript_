@@ -1,0 +1,1 @@
+console.log("this is property call in object",data.name )
