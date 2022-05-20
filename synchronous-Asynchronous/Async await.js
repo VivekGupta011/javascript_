@@ -89,7 +89,7 @@ function displayUserData(){
 
 // });
 
-// Async- await => we only use this function when there having synchronous code otherwise we have to make with the keyword 'async'
+// Async- await => we only use this function when there having asynchronous code otherwise we have to make with the keyword 'async'
 // Async-await=>this function provide us as a default 'promise()'
 // NOTE:WE Only use "then" when our code are "promise"
 async function authenticate(){
